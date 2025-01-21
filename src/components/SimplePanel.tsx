@@ -8,8 +8,6 @@ import { SimpleOptions } from 'types';
 import Plotly from 'plotly.js/dist/plotly';
 import { Config, Frame, Layout } from 'plotly.js';
 import Plot from 'react-plotly.js';
-import { defaults } from 'defaults';
-
 
 declare global {
   interface Window {

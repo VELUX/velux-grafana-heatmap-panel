@@ -1,8 +1,8 @@
 import { SimpleOptions } from "types";
 
 export const defaults: SimpleOptions = {
-  title: 'Owen Heatmap',
   layout: {
+    title: 'Owen Heatmap',
     font: {
       color: 'darkgrey',
     },

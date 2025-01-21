@@ -10,12 +10,6 @@ import { defaults } from 'defaults';
 
 export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOptions((builder) => {
   return builder
-    .addTextInput({
-      path: 'title',
-      name: 'Plot Title',
-      description: 'Name your Plot',
-      defaultValue: defaults.title,
-    })
     .addCustomEditor({
       id: 'script',
       path: 'script',
@@ -33,17 +27,30 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
       },
       defaultValue: defaults.script,
     })
-    // .addCustomEditor({
-    //   id: 'layout',
-    //   path: 'layout',
-    //   name: 'Layout',
-    //   description: 'Layout of the chart',
-    //   editor: PanelOptionCode,
-    //   category: ['Plotly'],
-    //   settings: {
-    //     language: 'json',
-    //     initValue: defaults.layout,
-    //   },
-    //   defaultValue: null, //defaults.layout,
-    // })
+    .addCustomEditor({
+      id: 'layout',
+      path: 'layout',
+      name: 'Layout',
+      description: 'Layout of the chart',
+      editor: PanelOptionCode,
+      category: ['Plotly'],
+      settings: {
+        language: 'json',
+        initValue: defaults.layout,
+      },
+      defaultValue: defaults.layout,
+    })
+    .addCustomEditor({
+      id: 'config',
+      path: 'config',
+      name: 'Configuration',
+      description: 'Configuration of the chart',
+      editor: PanelOptionCode,
+      category: ['Plotly'],
+      settings: {
+        language: 'json',
+        initValue: defaults.config,
+      },
+      defaultValue: defaults.config,
+    })
 });

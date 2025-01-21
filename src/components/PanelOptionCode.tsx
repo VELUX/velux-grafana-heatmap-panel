@@ -17,7 +17,6 @@ export const PanelOptionCode: React.FC<Props> = ({ value, item, onChange, contex
       disableHeight
       className={css`
         margin-bottom: ${theme.spacing.sm};
-        height: 400px;
       `}
     >
       {({ width }) => (

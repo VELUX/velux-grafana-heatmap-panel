@@ -69,11 +69,9 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
   const plotFrames: Frame[] | undefined = [];
   const plotLayout: Partial<Layout> = {
     ...options.layout,
-    ...defaults.layout,
-    title: defaults.title,
   };
   const plotConfig: Partial<Config> = {
-    ...defaults.config
+    ...options.config
   };
   return (
     <div

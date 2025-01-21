@@ -3,6 +3,6 @@ export interface SimpleOptions {
   layout: object;
   config: object;
   frames: any[];
-  typeSelector: 'surface';
-  selectedFields: string;
+  data: any[],
+  script: string;
 }

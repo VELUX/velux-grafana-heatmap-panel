@@ -35,7 +35,16 @@ export const defaults: SimpleOptions = {
   config: {
     displayModeBar: false,
   },
-  typeSelector: 'surface',
+  data: [],
   frames: [],
-  selectedFields: '',
+  script: `console.log(data)
+return { data: _.map(data.series, ({ fields }, i) => {
+  const rows = _.filter(fields, f => f.type === 'number' && f.name !== 'time');  
+  return {
+    x: _.map(rows, 'name'),
+    y: _.find(fields, f => f.name === 'time')?.values?.map(v => new Date(v)),
+    z: _.unzip(_.map(rows, 'values')),
+    type: 'surface',
+  }
+})};`,
 }

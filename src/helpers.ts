@@ -20,4 +20,3 @@ return {
     options: _.map(_.map(pureRows, 'name'), value => ({ value, label: value }))
   }
 };
-

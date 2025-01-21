@@ -30,6 +30,7 @@
     "@types/node": "^20.8.7",
     "@types/react-plotly.js": "^2.6.3",
     "@types/react-router-dom": "^5.2.0",
+    "@types/react-virtualized-auto-sizer": "^1.0.4",
     "@types/testing-library__jest-dom": "5.14.8",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
@@ -72,6 +73,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-plotly.js": "^2.6.0",
+    "react-virtualized-auto-sizer": "^1.0.25",
     "tslib": "2.5.3"
   },
   "packageManager": "yarn@1.22.22"

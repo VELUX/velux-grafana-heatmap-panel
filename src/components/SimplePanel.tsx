@@ -81,16 +81,18 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
         `
       )}
     >
-      <Plot
-        style={{
-          height: '100%',
-        }}
-        data={parameters.data}
-        frames={plotFrames}
-        layout={plotLayout}
-        config={plotConfig}
-        useResizeHandler={true}
-      ></Plot>
+      {parameters?.data ? (
+        <Plot
+          style={{
+            height: '100%',
+          }}
+          data-testid="simple-panel-plotly"
+          data={parameters.data}
+          frames={plotFrames}
+          layout={plotLayout}
+          config={plotConfig}
+          useResizeHandler={true}
+        ></Plot>) : 'No data'}
     </div>
   );
 };

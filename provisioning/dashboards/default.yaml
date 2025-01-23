@@ -1,0 +1,7 @@
+apiVersion: 1
+
+providers:
+  - name: 'vip-heatmap'
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards

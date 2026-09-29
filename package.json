@@ -65,10 +65,10 @@
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/css": "11.10.6",
-    "@grafana/data": "^11.3.0",
-    "@grafana/runtime": "^11.3.0",
+    "@grafana/data": "11.6.11",
+    "@grafana/runtime": "11.6.15",
     "@grafana/schema": "^11.3.0",
-    "@grafana/ui": "^11.3.0",
+    "@grafana/ui": "11.6.15",
     "@types/semver": "^7.5.8",
     "D": "^1.0.0",
     "lodash": "^4.17.21",
